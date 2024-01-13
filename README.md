@@ -3,7 +3,18 @@ This contains all the files used for QUB EEECS Jetson Demo showcased at BT Young
 
 ### Requirements
 In order to showcase this demo the following is required:
-- Jetson Nano / Raspberry Pi, (Note GPIO libraries on pi5 need updated).
+- Jetson Nano.
 - Xbox Controller (Series X used at event).
 - PCB of LED array.
 - Power Supply.
+
+### Python3 libraries used
+`pip3 install time`
+`pip3 install evdev`
+`pip3 install Jetson.GPIO`
+`pip3 install curses`
+### Overview
+The files in this repo do the following:
+-"xbox_control_visual.py" is used to show a GUI which displays the input in the users terminal.
+-"xbox_input_track.py" is used to print the controller input to terminal.
+-"led_array.py" will output the controller input to GPIO pins used to Brighten LEDs on the PCB.
